@@ -9,3 +9,9 @@ CP usr /
 
 SERVICE nginx enable
 SERVICE nginx start
+
+# add wrapper script to create signing keypair
+# and print TODO list for poudriere-in-a-jail
+CP root /
+CMD /root/script.sh
+
