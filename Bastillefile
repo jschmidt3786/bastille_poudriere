@@ -1,0 +1,11 @@
+PKG ccze colordiff htop tmux zsh
+PKG nginx poudriere-devel
+
+CP usr /
+# new nginx.conf with conf.d include
+# tls/ and conf.d/ dirs
+# poudriere.conf vhost
+# self-signed cert (or generate a new pair)
+
+SERVICE nginx enable
+SERVICE nginx start
